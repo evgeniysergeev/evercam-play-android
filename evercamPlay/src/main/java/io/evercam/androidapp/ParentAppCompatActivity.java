@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 
 import com.logentries.android.AndroidLogger;
 import com.nineoldandroids.view.ViewHelper;
-import com.splunk.mint.Mint;
+//import com.splunk.mint.Mint;
 
 import io.evercam.androidapp.feedback.MixpanelHelper;
 import io.evercam.androidapp.utils.Constants;
@@ -43,7 +43,7 @@ public class ParentAppCompatActivity extends AppCompatActivity
         {
             if(propertyReader.isPropertyExist(PropertyReader.KEY_SPLUNK_MINT))
             {
-                Mint.startSession(this);
+                //Mint.startSession(this);
             }
         }
     }
@@ -57,7 +57,7 @@ public class ParentAppCompatActivity extends AppCompatActivity
         {
             if(propertyReader.isPropertyExist(PropertyReader.KEY_SPLUNK_MINT))
             {
-                Mint.closeSession(this);
+                //Mint.closeSession(this);
             }
         }
 
@@ -87,7 +87,7 @@ public class ParentAppCompatActivity extends AppCompatActivity
             {
                 String bugSenseCode = propertyReader.getPropertyStr(PropertyReader
                         .KEY_SPLUNK_MINT);
-                Mint.initAndStartSession(this,bugSenseCode);
+                //Mint.initAndStartSession(this,bugSenseCode);
             }
         }
     }
@@ -96,7 +96,7 @@ public class ParentAppCompatActivity extends AppCompatActivity
     {
         if(Constants.isAppTrackingEnabled)
         {
-            Mint.logException(e);
+            //Mint.logException(e);
         }
     }
 
@@ -110,7 +110,7 @@ public class ParentAppCompatActivity extends AppCompatActivity
 
     public static void sendWithMsgToMint(String messageName, String message, Exception e)
     {
-        Mint.logExceptionMessage(messageName, message, e);
+        //Mint.logExceptionMessage(messageName, message, e);
     }
 
     protected boolean toolbarIsShown()

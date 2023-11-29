@@ -167,9 +167,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="55dp"
                 android:layout_marginBottom="20sp"
-                android:background="@+drawable/signup_btn_selector"
+                android:background="@drawable/signup_btn_selector"
                 android:text="@string/create_account"
-                android:textColor="@+drawable/signup_btn_txt_selector"/>
+                android:textColor="@drawable/signup_btn_txt_selector"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
