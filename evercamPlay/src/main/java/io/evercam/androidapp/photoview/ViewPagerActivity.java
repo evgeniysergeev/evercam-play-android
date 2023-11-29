@@ -5,9 +5,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,7 +27,7 @@ import java.util.List;
 import io.evercam.androidapp.ParentAppCompatActivity;
 import io.evercam.androidapp.R;
 import io.evercam.androidapp.custom.CustomedDialog;
-import uk.co.senab.photoview.PhotoView;
+//import uk.co.senab.photoview.PhotoView;
 
 public class ViewPagerActivity extends ParentAppCompatActivity
 {
@@ -217,13 +217,13 @@ public class ViewPagerActivity extends ParentAppCompatActivity
 		@Override
 		public View instantiateItem(ViewGroup container, int position)
 		{
-			PhotoView photoView = new PhotoView(container.getContext());
-			photoView.setImageURI(Uri.parse(mImagePathList.get(position)));
+			//PhotoView photoView = new PhotoView(container.getContext());
+			//photoView.setImageURI(Uri.parse(mImagePathList.get(position)));
 
 			// Now just add PhotoView to ViewPager and return it
-			container.addView(photoView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+			//container.addView(photoView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
-			return photoView;
+			return null;
 		}
 
 		@Override

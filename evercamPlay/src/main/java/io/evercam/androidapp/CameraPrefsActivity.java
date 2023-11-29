@@ -5,11 +5,11 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceFragment;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.splunk.mint.Mint;
+//import com.splunk.mint.Mint;
 
 import java.util.ArrayList;
 
@@ -43,7 +43,7 @@ public class CameraPrefsActivity extends AppCompatActivity
             {
                 String bugSenseCode = propertyReader.getPropertyStr(PropertyReader
                         .KEY_SPLUNK_MINT);
-                Mint.initAndStartSession(this, bugSenseCode);
+                //Mint.initAndStartSession(this, bugSenseCode);
             }
         }
 
@@ -63,7 +63,7 @@ public class CameraPrefsActivity extends AppCompatActivity
         {
             if(propertyReader.isPropertyExist(PropertyReader.KEY_SPLUNK_MINT))
             {
-                Mint.startSession(this);
+                //Mint.startSession(this);
             }
         }
     }
@@ -78,7 +78,7 @@ public class CameraPrefsActivity extends AppCompatActivity
         {
             if(propertyReader.isPropertyExist(PropertyReader.KEY_SPLUNK_MINT))
             {
-                Mint.closeSession(this);
+                //Mint.closeSession(this);
             }
         }
     }
